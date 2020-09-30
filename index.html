@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale-1">
+  <title>Twitch UI</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="flex-container">
+    <div class="flex-container grow-1">
+      <div class="flex-container align-center">
+        <a href="" class="flex-container">
+          <img class="twitch-logo" src="./img/logo-twitch.svg" alt="twitch logo">
+        </a>
+      </div>
+
+      <nav class="flex-container">
+        <div class="flex-container">
+          <a href="" class="flex-container nav-links">
+            <span class="align-s-center lg-screen" href="">Following</span>
+            <ion-icon name="heart-outline" class="align-s-center sm-screen sm-screen-icon bd-5"></ion-icon>
+          </a>
+        </div>
+        <div class="flex-container">
+          <a href="" class="flex-container nav-links">
+            <span class="align-s-center lg-screen" href="">Browse</span>
+            <ion-icon name="copy-outline" class="align-s-center sm-screen sm-screen-icon bd-5"></ion-icon>
+          </a>
+        </div>
+        <div class="flex-container">
+          <a href="" class="flex-container nav-links">
+            <span class="align-s-center lg-screen" href="">Esports</span>
+            <ion-icon name="trophy-outline" class="align-s-center sm-screen sm-screen-icon bd-5"></ion-icon>
+          </a>
+        </div>
+        <div class="flex-container">
+          <a href="" class="flex-container nav-links">
+            <span class="align-s-center lg-screen" href="">Music</span>
+            <ion-icon name="musical-notes-outline" class="align-s-center sm-screen sm-screen-icon bd-5"></ion-icon>
+          </a>
+        </div>
+      </nav>
+      <div class="flex-container align-center rel dropdown-fire">
+        <ion-icon name="ellipsis-horizontal" class="cursor three-dots bd-5 dropdown-toggler" title="more"></ion-icon>
+        <div class="dropdown dropdown-more abs bd-5 hidden" data-simplebar>
+          <p class="dropdown-more-titles">General</p>
+          <div class="flex-container flex-col">
+            <a href="" class="dropdown-more-items bd-5">About</a>
+            <a href="" class="dropdown-more-items bd-5">Advertisers</a>
+            <a href="" class="dropdown-more-items bd-5">Blog</a>
+            <a href="" class="dropdown-more-items bd-5">Developers</a>
+            <a href="" class="dropdown-more-items bd-5">Download Apps</a>
+            <a href="" class="dropdown-more-items bd-5">Gift Card</a>
+            <a href="" class="dropdown-more-items bd-5">IGDB</a>
+            <a href="" class="dropdown-more-items bd-5">Jobs</a>
+            <a href="" class="dropdown-more-items bd-5">Music on Twitch</a>
+            <a href="" class="dropdown-more-items bd-5">Partners</a>
+            <a href="" class="dropdown-more-items bd-5">Press</a>
+            <a href="" class="dropdown-more-items bd-5">Store</a>
+            <a href="" class="dropdown-more-items bd-5">Turbo</a>
+          </div>
+          <div class="dropdown-more-invis"></div>
+          <p class="dropdown-more-titles">Help & Legal</p>
+          <div class="flex-container flex-col">
+            <a href="" class="dropdown-more-items bd-5">Accessibility Statement</a>
+            <a href="" class="dropdown-more-items bd-5">Ad Choices</a>
+            <a href="" class="dropdown-more-items bd-5">Community Guidelines</a>
+            <a href="" class="dropdown-more-items bd-5">Cookie Policy</a>
+            <a href="" class="dropdown-more-items bd-5">Help</a>
+            <a href="" class="dropdown-more-items bd-5">Privacy Policy</a>
+            <a href="" class="dropdown-more-items bd-5">Secuirty</a>
+            <a href="" class="dropdown-more-items bd-5">Terms</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ---------------------------------------- -->
+    <div class="flex-container justify-center grow-1 lg-screen">
+      <div class="flex-container search-bar-container align-s-center">
+        <input type="text" name="search-bar" placeholder="Search" class="search-bar grow-1 bd-5">
+        <div class="search-icon-container bd-5">
+          <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-container grow-1 justify-end">
+      <div class="flex-container header-icons-right-container">
+        <ion-icon name="search" class="header-icons-right sm-screen sm-screen-icon align-s-center cursor bd-5 dropdown-toggler"></ion-icon>
+      </div>
+      <div class="flex-container header-icons-right-container rel dropdown-fire">
+        <ion-icon class="header-icons-right bd-5 cursor align-s-center dropdown-toggler" name="basket-outline" title="prime loot"></ion-icon>
+        <div class="dropdown dropdown-loot abs bd-5 hidden">
+
+          <div class="dropdown-loot-header dropdown-header flex-container align-center justify-center">
+            <h2>Prime Gaming Loot</h2>
+            <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
+          </div>
+
+          <div class="dropdown-loot-body" data-simplebar>
+            <div class="dropdown-loot-items-container">
+
+              <div class="dropdown-loot-body-prime">
+                <div class="prime-title">Claim With Prime Gaming</div>
+                <div class="flex-container justify-center prime-gaming">
+                  <img src="./img/prime-gaming.svg" alt="amzn prime">
+                </div>
+                <p>Support your favorite streamer, plus get monthly games and in-game loot, and loads more with Prime Gaming.</p>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">League of Legends: 1st Skin Shard Now Available</div>
+                <img src="./img/leaugeImg1.jpg" alt="league image">
+                <p>In-Game Loot: Sept 28 – Oct 8</p>
+                <div class="dropdown-loot-item-company">Riot Games</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Get up to GTA$2,000,000 and more this month in GTA</div>
+                <img src="./img/Gta.jpg" alt="GTA">
+                <p>In-Game Loot</p>
+                <div class="dropdown-loot-item-company">Rockstar Games</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Netter Treter Gun Buddy for VALORANT</div>
+                <img src="./img/Valorant.jpg" alt="Valorant">
+                <p>In-Game Loot: Sept 18 – Oct 15</p>
+                <div class="dropdown-loot-item-company">Riot Games</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Red Dead Online: Get a reward for a free Role Outfit, Accessory or Emote of your choice and More</div>
+                <img src="./img/rdo.jpg" alt="Red dead online">
+                <p>In-Game Loot</p>
+                <div class="dropdown-loot-item-company">Rockstar Games</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Paladins: Shadow Stalker Mount</div>
+                <img src="./img/paladins.jpg" alt="Paladins">
+                <p>In-Game Loot: Sept 24 - Oct 28</p>
+                <div class="dropdown-loot-item-company">Hi-Rez</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">SMITE: Claim Code Eater Bakasura</div>
+                <img src="./img/smite.jpg" alt="smite">
+                <p>In-Game Loot: Sept 23 - Oct 22</p>
+                <div class="dropdown-loot-item-company">Hi-Rez</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Last Day on Earth: Survival - Backpack style "Zipper"</div>
+                <img src="./img/survival.jpg" alt="Last day on Earth">
+                <p>In-Game Loot: Sept 24 – Oct 1</p>
+                <div class="dropdown-loot-item-company">Kefir Games</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">The Colony Exotic Bundle Drop</div>
+                <img src="./img/colony.jpg" alt="colony">
+                <p>In-Game Loot: Sept 23 – Oct 21</p>
+                <div class="dropdown-loot-item-company">Bungie</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">MLB Tap Sports Baseball 2020: All Rise #99 Bundle! - Exclusive Aaron Judge, 1x Bonus Player Box, 20x Evo</div>
+                <img src="./img/baseball.jpg" alt="baseball">
+                <p>In-Game Loot: Sept 23 - Sept 30</p>
+                <div class="dropdown-loot-item-company">Glu Mobile</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Warframe: Avia Prime Syandana</div>
+                <img src="./img/warframe.jpg" alt="warframe">
+                <p>In-Game Loot: Sept 22 - Oct 27</p>
+                <div class="dropdown-loot-item-company">Digital Extremes</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Epic Seven: Greater Artifact Charm x3, 500,000 Gold</div>
+                <img src="./img/epicseven.jpg" alt="Epic 7">
+                <p>In-Game Loot: Sept 23 - Oct 27</p>
+                <div class="dropdown-loot-item-company">Smilegate</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Bloodhound: Will of the Allfather</div>
+                <img src="./img/bloodhound.jpg" alt="blood hound">
+                <p>In-Game Loot: Sep 21 – Oct 20</p>
+                <div class="dropdown-loot-item-company">Electronic Arts</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Big Farm: Mobile Harvest: Farmdollars (x1M)</div>
+                <img src="./img/bigfarm.jpg" alt="Big Farm">
+                <p>In-Game Loot: Sep 21 – Oct 5</p>
+                <div class="dropdown-loot-item-company">GoodGames Studios</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+              <div class="dropdown-loot-body-item">
+                <div class="dropdown-loot-item-title">Roblox: Tropical Coconut Pauldrons</div>
+                <img src="./img/roblox.jpg" alt="Roblox">
+                <p>In-Game Loot: Sept 11 – Oct 12</p>
+                <div class="dropdown-loot-item-company">Roblox Corporation</div>
+                <button type="button" class="bd-5 cursor" name="button">Start Your Free Trial</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container header-icons-right-container rel dropdown-fire">
+        <ion-icon class="header-icons-right align-s-center bd-5 cursor dropdown-toggler" name="notifications-outline" title="notifications"></ion-icon>
+        <div class="dropdown dropdown-notifications bd-5 abs hidden">
+
+          <div class="dropdown-notifications-header dropdown-header flex-container align-center justify-center">
+            <ion-icon name="mail-open-outline" class="mail-icon abs cursor bd-5"></ion-icon>
+            <h2>Notifications</h2>
+            <ion-icon name="settings-outline" class="settings-icon abs cursor bd-5"></ion-icon>
+            <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
+          </div>
+          <div class="dropdown-notifications-body" data-simplebar>
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Did you Know Twitch gift cards are a thing? Support streaners, cheers in chat, and more</p>
+                  <p>2 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Swae Lee, Nle Choppa and more are going live on the /ROllingLoud Loud Stream</p>
+                  <p>5 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description"><b>Build a Community</b> completed</p>
+                  <p>7 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description"><b>Path to Afiiliate</b> completed</p>
+                  <p>10 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">St4r has gifted you a <b>Tier $4.99</b> subscription (1month) to <b>S4vis</b></p>
+                  <p>15 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">You have earned new emotes for enabling 2FA! Find them under "Unlocked Emotes"</p>
+                  <p>20 days ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Tune in to the twitch rivals tournament 5pm central</p>
+                  <p>1 month ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Drops are available on Cs-GO link your account to be eligible</p>
+                  <p>1 month ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Only 3 days left to use your 2$ promo credit</p>
+                  <p>2 months ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification-items flex-container cursor rel">
+              <div class="flex-container notification-items-wrapper grow-1">
+                <div class="avatar-container-wrapper-notifications">
+                  <div class="avatar-container flex-container justify-center align-center">
+                    <ion-icon class="person-icon" name="person"></ion-icon>
+                  </div>
+                </div>
+                <div class="grow-1">
+                  <p class="notification-item-description">Live now: Logic is dropping his new album</p>
+                  <p>2 months ago</p>
+                </div>
+                <div class="delete-icon-wrapper-notification flex-container  align-end justify-center abs">
+                  <div>
+                    <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container header-icons-right-container rel dropdown-fire">
+        <ion-icon class="header-icons-right bd-5 cursor align-s-center dropdown-toggler" name="chatbox-outline" title="whispers"></ion-icon>
+        <div class="dropdown dropdown-whispers bd-5 abs hidden">
+          <div class="dropdown-whispers-header dropdown-header flex-container flex-col">
+
+              <div class="whipsers-header-container flex-container align-center justify-center">
+              <h2>Whispers</h2>
+              <ion-icon name="settings-outline" class="settings-icon abs cursor bd-5"></ion-icon>
+              <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
+              </div>
+
+          <div class="whispers-search-container flex-container">
+            <div class="whispers-search-wrapper flex-container grow-1 bd-5">
+              <div class="flex-container">
+              <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
+              </div>
+              <input type="text" placeholder="Search for People" class="grow-1 whispers-searchbox">
+          </div>
+        </div>
+        </div>
+
+          <div class="dropdown-whispers-body" data-simplebar>
+            <div class="whisper-search-result"></div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>RunItUp</b></p>
+                <p class="whisper-shown-message">Wanna play some League</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>Gamer120</b></p>
+                <p class="whisper-shown-message">My ign is Ianareq</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>NinjasRelm</b></p>
+                <p class="whisper-shown-message">Are you watch the tourn?</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>LOLt1</b></p>
+                <p class="whisper-shown-message">I'm hardstcuk in d4</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>Letsgofight</b></p>
+                <p class="whisper-shown-message">Have you tried the among us game?</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>Xx_x_xX</b></p>
+                <p class="whisper-shown-message">How much is it?</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>Yearlodi</b></p>
+                <p class="whisper-shown-message">Alright I can play later</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>PaypalRecieved</b></p>
+                <p class="whisper-shown-message">Who won I missed it</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>AceGamingT4SA</b></p>
+                <p class="whisper-shown-message">Yea I lost promos</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+            <div class="whisper-item flex-container align-center rel cursor">
+              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                <ion-icon class="person-icon" name="person"></ion-icon>
+              </div>
+              <div class="whisper-item-body">
+                <p class="whisper-item-username"><b>TryHardLarry</b></p>
+                <p class="whisper-shown-message">I'm rank number 3 rn</p>
+              </div>
+              <div class="whisper-delete-icon-wrapper abs">
+                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container rel dropdown-fire">
+        <div class="flex-container align-s-center get-bits-container bd-5 cursor dropdown-toggler">
+          <ion-icon name="flame-outline" class="flame-icon align-s-center dropdown-toggler"></ion-icon>
+          <span class="align-s-center get-bits-text dropdown-toggler">Get Bits</span>
+        </div>
+
+        <div class="dropdown dropdown-bits abs bd-5 hidden">
+          <div class="dropdown-header dropdown-bits-header flex-container align-center justify-center">
+            <div class="flex-container flex-col align-center">
+              <h2>Purchase Bits</h2>
+              <p class="bit-amount-text">You have <b><span class="bit-count">0</span> Bits</b></p>
+            </div>
+            <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
+          </div>
+
+          <div class="dropdown-bits-body" data-simplebar>
+            <p class="prices-shown-in-usd">Prices shown in <b>USD</b></p>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>100 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" class="bit-img" alt="bit triangle">
+                  <img src="./img/bitFlame.png" class="bit-img" alt="bit flame">
+                </div>
+              </div>
+              <button type="button" name="button" class="bd-5 cursor">$1.40</button>
+            </div>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>500 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" alt="bit triangle">
+                  <img src="./img/bitFlame.png" alt="bit flame">
+                </div>
+              </div>
+              <button type="button" name="button" class="bd-5 cursor">$7.00</button>
+            </div>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>1500 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" alt="bit triangle">
+                  <img src="./img/bitFlame.png" alt="bit flame">
+                  <img src="./img/bitHex.png" alt="bit hex">
+                </div>
+              </div>
+              <div class="flex-container flex-col align-end">
+                <button type="button" name="button" class="bd-5 cursor">$19.95</button>
+                <p class="discount">5% discount</p>
+              </div>
+            </div>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>5000 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" alt="bit triangle">
+                  <img src="./img/bitFlame.png" alt="bit flame">
+                  <img src="./img/bitHex.png" alt="bit hex">
+                  <img src="./img/bitDiamond.png" alt="bit Diamond">
+                </div>
+              </div>
+              <div class="flex-container flex-col align-end">
+                <button type="button" name="button" class="bd-5 cursor">$64.40</button>
+                <p class="discount">8% discount</p>
+              </div>
+            </div>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>10,000 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" alt="bit triangle">
+                  <img src="./img/bitFlame.png" alt="bit flame">
+                  <img src="./img/bitHex.png" alt="bit hex">
+                  <img src="./img/bitDiamond.png" alt="bit diamond">
+                  <img src="./img/bitStar.png" alt="bit star">
+                </div>
+              </div>
+              <div class="flex-container flex-col align-end">
+                <button type="button" name="button" class="bd-5 cursor">$126.00</button>
+                <p class="discount">10% discount</p>
+              </div>
+            </div>
+
+            <div class="bit-item flex-container justify-sb align-center">
+              <div class="flex-container flex-col align-start">
+                <span class="bit-amount"><b>25,000 Bits</b></span>
+                <div>
+                  <img src="./img/bitTriangle.png" alt="bit triangle">
+                  <img src="./img/bitFlame.png" alt="bit flame">
+                  <img src="./img/bitHex.png" alt="bit hex">
+                  <img src="./img/bitDiamond.png" alt="bit diamond">
+                  <img src="./img/bitStar.png" alt="bit star">
+                </div>
+              </div>
+              <div class="flex-container flex-col align-end">
+                <button type="button" name="button" class="bd-5 cursor">$308.00</button>
+                <p class="discount">12% discount</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container align-center dropdown-fire">
+        <div class="avatar-container nav-avatar flex-container align-center justify-center cursor rel dropdown-toggler">
+          <ion-icon class="person-icon nav-person-icon dropdown-toggler" name="person"></ion-icon>
+          <div class="online-dot abs dropdown-toggler"></div>
+        </div>
+        <div class="dropdown dropdown-avatar flex-container flex-col bd-5 abs hidden" data-simplebar>
+          <div class="flex-container align-center avatar-username-info">
+            <div class="avatar-container flex-container justify-center align-center">
+              <ion-icon class="person-icon" name="person"></ion-icon>
+            </div>
+            <div>
+              <p><b>TinyRick</b></p>
+              <div class="flex-container align-center">
+                <span class="online-dot"></span>
+                <p class="online-status">Offline</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container justify-sb avatar-online-presence">
+            <span>Online</span>
+            <div class="flex-container align-center circle-bg rel">
+              <div class="white-circle abs cursor"></div>
+            </div>
+          </div>
+          <div class="avatar-items-container">
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="body-outline"></ion-icon>
+              <p>Channel</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="videocam-outline"></ion-icon>
+              <p>Video Producer</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="podium-outline"></ion-icon>
+              <p>Creator DashBoard</p>
+            </div>
+          </div>
+
+          <div class="avatar-items-container">
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="people-outline"></ion-icon>
+              <p>Friends</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="star-outline"></ion-icon>
+              <p>Subscriptions</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="file-tray-full-outline"></ion-icon>
+              <p>Drops</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="wallet-outline"></ion-icon>
+              <p>Wallet</p>
+            </div>
+          </div>
+
+          <div class="avatar-items-container cursor">
+            <div class="flex-container align-center avatar-items bd-5">
+              <ion-icon name="settings-outline"></ion-icon>
+              <p>Settings</p>
+            </div>
+            <div class="flex-container align-center cursor avatar-items bd-5">
+              <ion-icon name="globe-outline"></ion-icon>
+              <p>Language</p>
+            </div>
+            <div class="flex-container align-center dark-theme avatar-items bd-5">
+              <div class="flex-container grow-1 justify-sb align-center">
+                <div class="flex-container">
+                  <ion-icon name="moon-outline"></ion-icon>
+                  <p>Dark Theme</p>
+                </div>
+                <div class="flex-container align-center circle-bg rel">
+                  <div class="white-circle abs cursor"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar-items-container cursor">
+            <div class="flex-container align-center avatar-items bd-5">
+              <ion-icon name="exit-outline"></ion-icon>
+              <p>Log Out</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+  </main>
+</body>
+<div class="author-credit">
+  Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+</div>
+<script src="./dist/main.js" charset="utf-8"></script>
+
+</html>
