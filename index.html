@@ -15,7 +15,7 @@
     <div class="flex-container grow-1">
       <div class="flex-container align-center">
         <a href="" class="flex-container">
-          <img class="twitch-logo" src="./img/logo-twitch.svg" alt="twitch logo">
+          <ion-icon name="logo-twitch" class="twitch-logo"></ion-icon>
         </a>
       </div>
 
@@ -83,7 +83,7 @@
     <!-- ---------------------------------------- -->
     <div class="flex-container justify-center grow-1 lg-screen">
       <div class="flex-container search-bar-container align-s-center">
-        <input type="text" name="search-bar" placeholder="Search" class="search-bar grow-1 bd-5">
+        <input type="search" name="search-bar" placeholder="Search" class="search-bar grow-1 bd-5">
         <div class="search-icon-container bd-5">
           <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
         </div>
@@ -243,8 +243,8 @@
             <ion-icon name="settings-outline" class="settings-icon abs cursor bd-5"></ion-icon>
             <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
           </div>
-          <div class="dropdown-notifications-body" data-simplebar>
-            <div class="notification-items flex-container cursor rel">
+          <div class="dropdown-notifications-body body" data-simplebar>
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -263,7 +263,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -282,7 +282,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -301,7 +301,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -320,7 +320,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -339,7 +339,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -358,7 +358,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -377,7 +377,7 @@
                 </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -396,7 +396,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -415,7 +415,7 @@
               </div>
             </div>
 
-            <div class="notification-items flex-container cursor rel">
+            <div class="notification-items body-item flex-container cursor rel">
               <div class="flex-container notification-items-wrapper grow-1">
                 <div class="avatar-container-wrapper-notifications">
                   <div class="avatar-container flex-container justify-center align-center">
@@ -452,144 +452,147 @@
               <div class="flex-container">
               <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
               </div>
-              <input type="text" placeholder="Search for People" class="grow-1 whispers-searchbox">
+              <input type="search" placeholder="Search for People" class="grow-1 whispers-searchbox">
           </div>
         </div>
         </div>
 
-          <div class="dropdown-whispers-body" data-simplebar>
-            <div class="whisper-search-result"></div>
+          <div class="dropdown-whispers-body body rel" data-simplebar>
 
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
+            <div class="whisper-search-result whisper-items-container hidden" data-simplebar>
+
+            </div>
+            <div class="whisper-items-shown whisper-items-container">
+              <div class="whisper-item body-item flex-container number-0 align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>RunItUp</b></p>
+                  <p class="whisper-shown-message">Wanna play some League</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
               </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>RunItUp</b></p>
-                <p class="whisper-shown-message">Wanna play some League</p>
+
+              <div class="whisper-item body-item number-1 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>Gamer120</b></p>
+                  <p class="whisper-shown-message">My ign is Ianareq</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
               </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+
+              <div class="whisper-item body-item number-2 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>NinjasRelm</b></p>
+                  <p class="whisper-shown-message">Are you watch the tourn?</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-3 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>LOLt1</b></p>
+                  <p class="whisper-shown-message">I'm hardstcuk in d4</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-4 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>Letsgofight</b></p>
+                  <p class="whisper-shown-message">Have you tried the among us game?</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-5 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>Xx_x_xX</b></p>
+                  <p class="whisper-shown-message">How much is it?</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-6 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>Yearlodi</b></p>
+                  <p class="whisper-shown-message">Alright I can play later</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-7 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>PaypalRecieved</b></p>
+                  <p class="whisper-shown-message">Who won I missed it</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-8 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>AceGamingT4SA</b></p>
+                  <p class="whisper-shown-message">Yea I lost promos</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
+              </div>
+
+              <div class="whisper-item body-item number-9 flex-container align-center rel cursor">
+                <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
+                  <ion-icon class="person-icon" name="person"></ion-icon>
+                </div>
+                <div class="whisper-item-body">
+                  <p class="whisper-item-username"><b>TryHardLarry</b></p>
+                  <p class="whisper-shown-message">I'm rank number 3 rn</p>
+                </div>
+                <div class="whisper-delete-icon-wrapper abs">
+                  <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
+                </div>
               </div>
             </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>Gamer120</b></p>
-                <p class="whisper-shown-message">My ign is Ianareq</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>NinjasRelm</b></p>
-                <p class="whisper-shown-message">Are you watch the tourn?</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>LOLt1</b></p>
-                <p class="whisper-shown-message">I'm hardstcuk in d4</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>Letsgofight</b></p>
-                <p class="whisper-shown-message">Have you tried the among us game?</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>Xx_x_xX</b></p>
-                <p class="whisper-shown-message">How much is it?</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>Yearlodi</b></p>
-                <p class="whisper-shown-message">Alright I can play later</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>PaypalRecieved</b></p>
-                <p class="whisper-shown-message">Who won I missed it</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>AceGamingT4SA</b></p>
-                <p class="whisper-shown-message">Yea I lost promos</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
-            <div class="whisper-item flex-container align-center rel cursor">
-              <div class="avatar-container avatar-container-whispers flex-container justify-center align-center">
-                <ion-icon class="person-icon" name="person"></ion-icon>
-              </div>
-              <div class="whisper-item-body">
-                <p class="whisper-item-username"><b>TryHardLarry</b></p>
-                <p class="whisper-shown-message">I'm rank number 3 rn</p>
-              </div>
-              <div class="whisper-delete-icon-wrapper abs">
-                <ion-icon name="trash-outline" class="delete-icon bd-5"></ion-icon>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -620,7 +623,7 @@
                   <img src="./img/bitFlame.png" class="bit-img" alt="bit flame">
                 </div>
               </div>
-              <button type="button" name="button" class="bd-5 cursor">$1.40</button>
+              <button type="button" name="button" class="bd-5 cursor" data-bits="100">$1.40</button>
             </div>
 
             <div class="bit-item flex-container justify-sb align-center">
@@ -631,7 +634,7 @@
                   <img src="./img/bitFlame.png" alt="bit flame">
                 </div>
               </div>
-              <button type="button" name="button" class="bd-5 cursor">$7.00</button>
+              <button type="button" name="button" class="bd-5 cursor" data-bits="500">$7.00</button>
             </div>
 
             <div class="bit-item flex-container justify-sb align-center">
@@ -644,7 +647,7 @@
                 </div>
               </div>
               <div class="flex-container flex-col align-end">
-                <button type="button" name="button" class="bd-5 cursor">$19.95</button>
+                <button type="button" name="button" class="bd-5 cursor" data-bits="1500">$19.95</button>
                 <p class="discount">5% discount</p>
               </div>
             </div>
@@ -660,7 +663,7 @@
                 </div>
               </div>
               <div class="flex-container flex-col align-end">
-                <button type="button" name="button" class="bd-5 cursor">$64.40</button>
+                <button type="button" name="button" class="bd-5 cursor" data-bits="5000">$64.40</button>
                 <p class="discount">8% discount</p>
               </div>
             </div>
@@ -677,7 +680,7 @@
                 </div>
               </div>
               <div class="flex-container flex-col align-end">
-                <button type="button" name="button" class="bd-5 cursor">$126.00</button>
+                <button type="button" name="button" class="bd-5 cursor" data-bits="10000">$126.00</button>
                 <p class="discount">10% discount</p>
               </div>
             </div>
@@ -694,7 +697,7 @@
                 </div>
               </div>
               <div class="flex-container flex-col align-end">
-                <button type="button" name="button" class="bd-5 cursor">$308.00</button>
+                <button type="button" name="button" class="bd-5 cursor" data-bits="25000">$308.00</button>
                 <p class="discount">12% discount</p>
               </div>
             </div>
@@ -722,50 +725,50 @@
           </div>
           <div class="flex-container justify-sb avatar-online-presence">
             <span>Online</span>
-            <div class="flex-container align-center circle-bg rel">
+            <div class="flex-container align-center circle-bg cursor online-presence rel">
               <div class="white-circle abs cursor"></div>
             </div>
           </div>
           <div class="avatar-items-container">
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="body-outline"></ion-icon>
               <p>Channel</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="videocam-outline"></ion-icon>
               <p>Video Producer</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="podium-outline"></ion-icon>
               <p>Creator DashBoard</p>
             </div>
           </div>
 
           <div class="avatar-items-container">
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="people-outline"></ion-icon>
               <p>Friends</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="star-outline"></ion-icon>
               <p>Subscriptions</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="file-tray-full-outline"></ion-icon>
               <p>Drops</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="wallet-outline"></ion-icon>
               <p>Wallet</p>
             </div>
           </div>
 
           <div class="avatar-items-container cursor">
-            <div class="flex-container align-center avatar-items bd-5">
+            <div class="flex-container align-center avatar-items hoverable bd-5">
               <ion-icon name="settings-outline"></ion-icon>
               <p>Settings</p>
             </div>
-            <div class="flex-container align-center cursor avatar-items bd-5">
+            <div class="flex-container align-center cursor avatar-items hoverable bd-5">
               <ion-icon name="globe-outline"></ion-icon>
               <p>Language</p>
             </div>
@@ -775,14 +778,14 @@
                   <ion-icon name="moon-outline"></ion-icon>
                   <p>Dark Theme</p>
                 </div>
-                <div class="flex-container align-center circle-bg rel">
+                <div class="flex-container align-center cursor circle-bg theme rel">
                   <div class="white-circle abs cursor"></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="avatar-items-container cursor">
-            <div class="flex-container align-center avatar-items bd-5">
+            <div class="flex-container align-center avatar-items hoverable bd-5">
               <ion-icon name="exit-outline"></ion-icon>
               <p>Log Out</p>
             </div>

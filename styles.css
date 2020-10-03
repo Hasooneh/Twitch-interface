@@ -107,7 +107,8 @@ header {
   padding-right: 6px;
 }
 .twitch-logo {
-  width: 30px;
+  font-size: 30px;
+  color: var(--purple);
   padding: 7px;
 }
 .nav-links {
@@ -388,6 +389,7 @@ header {
 .whispers-search-wrapper .search-icon {
   border-top-left-radius: 7.5px;
   border-bottom-left-radius: 7.5px;
+  color: var(--personicon);
 }
 .whispers-search-wrapper .search-icon:hover {
   cursor:default;
@@ -400,11 +402,17 @@ header {
   outline: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  color: var(--ionicon);
 }
 .dropdown-whispers-body {
   height: 30vh;
   overflow: auto;
   color: var(--ionicon);
+}
+.whisper-search-result {
+  overflow: inherit;
+  height: 30vh;
+  width: 100%;
 }
 .whisper-item {
   height: 60px;
@@ -535,10 +543,10 @@ header {
   left: 1px;
   transition: transform 0.5s;
 }
-.avatar-online-presence.clicked .circle-bg,.dark-theme.clicked .circle-bg   {
+.circle-bg.clicked   {
   background-color: var(--purple);
 }
-.avatar-online-presence.clicked .white-circle, .dark-theme.clicked .white-circle  {
+.circle-bg.clicked .white-circle {
   transform: translate(85%);
 }
 .avatar-items-container {
@@ -548,11 +556,8 @@ header {
 .avatar-items {
   padding: 5px;
 }
-.avatar-items:hover {
+.avatar-items.hoverable:hover {
   background-color: var(--ioniconhover);
-}
-.dark-theme:hover {
-  background-color: inherit;
 }
 .avatar-items ion-icon {
   margin: 0 5px 0 1px;
@@ -563,7 +568,7 @@ header {
 /* navigation media queries */
 @media screen and (max-width:1200px) {
   .twitch-logo {
-    width: 25px;
+    font-size: 25px;
   }
   .nav-links {
     font-size: 16px;
