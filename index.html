@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="rel">
 
   <header class="flex-container">
     <div class="flex-container grow-1">
@@ -374,7 +374,7 @@
                     <ion-icon name="close-outline" class="delete-icon-notification delete-icon cursor"></ion-icon>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
 
             <div class="notification-items body-item flex-container cursor rel">
@@ -441,21 +441,21 @@
         <div class="dropdown dropdown-whispers bd-5 abs hidden">
           <div class="dropdown-whispers-header dropdown-header flex-container flex-col">
 
-              <div class="whipsers-header-container flex-container align-center justify-center">
+            <div class="whipsers-header-container flex-container align-center justify-center">
               <h2>Whispers</h2>
               <ion-icon name="settings-outline" class="settings-icon abs cursor bd-5"></ion-icon>
               <ion-icon name="close-outline" class="close-icon abs cursor bd-5"></ion-icon>
-              </div>
+            </div>
 
-          <div class="whispers-search-container flex-container">
-            <div class="whispers-search-wrapper flex-container grow-1 bd-5">
-              <div class="flex-container">
-              <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
+            <div class="whispers-search-container flex-container">
+              <div class="whispers-search-wrapper flex-container grow-1 bd-5">
+                <div class="flex-container">
+                  <ion-icon name="search" class="search-icon align-s-center cursor"></ion-icon>
+                </div>
+                <input type="search" placeholder="Search for People" class="grow-1 whispers-searchbox">
               </div>
-              <input type="search" placeholder="Search for People" class="grow-1 whispers-searchbox">
+            </div>
           </div>
-        </div>
-        </div>
 
           <div class="dropdown-whispers-body body rel" data-simplebar>
 
@@ -795,13 +795,828 @@
       </div>
     </div>
   </header>
-  <main>
+  <div class="flex-container aside-main-container">
 
-  </main>
-</body>
-<div class="author-credit">
-  Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    <aside class="sidebar" data-simplebar>
+      <div class="section following-section flex-container flex-col">
+        <div class="flex-container followed-channels-title-wrapper justify-center align-center">
+          <p class="followed-channels-title grow-1 collapsable">Followed Channels</p>
+          <ion-icon name="play-skip-back-outline" class="collapse-icon cursor bd-5"></ion-icon>
+        </div>
+
+        <div class="flex-container justify-center heart-icon-wrapper hidden">
+          <ion-icon class="cursor" title ="following" name="heart-outline"></ion-icon>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="67300">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>xQc</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">67.3k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="773">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>chuck_vg</b></p>
+            <p class="game-category">Vainglory</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">773</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="33">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>pzzacat</b></p>
+            <p class="game-category">Vainglory</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">33</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="210">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>HideInBush</b></p>
+            <p class="game-category">League of Legends</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">210</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="40300">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>sneaky</b></p>
+            <p class="game-category">League of Legends</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">40.3k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="1900">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Imaqt</b></p>
+            <p class="game-category">Genshin Impact</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">1.9k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="350">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>MusicProdi</b></p>
+            <p class="game-category">Music</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">350</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="1300">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Peanut</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">1.3k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="7300">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>dean</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">7.3k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>polar</b></p>
+            <p class="game-category">2 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>sammybn</b></p>
+            <p class="game-category">1 new video</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>renosance</b></p>
+            <p class="game-category">3 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>enigma</b></p>
+            <p class="game-category">7 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>intuitiveAim</b></p>
+            <p class="game-category">3 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>AgainstOdds</b></p>
+            <p class="game-category">7 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>taraMo</b></p>
+            <p class="game-category">no new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Marybo</b></p>
+            <p class="game-category">4 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>banannaGirl</b></p>
+            <p class="game-category">5 new videos</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div>Offline</div>
+          </div>
+        </div>
+        <div class="flex-container justify-sb collapsable">
+          <div class="show-more-follower-btn cursor">Show more</div>
+          <div class="show-less-follower-btn cursor hidden">Show less</div>
+        </div>
+      </div>
+      <div class="section recommended-section flex-container flex-col">
+        <div class="flex-container recommended-channels-title-wrapper justify-center align-center">
+          <p class="recommended-channels-title grow-1 collapsable">Recommended Channels</p>
+          <ion-icon class="recommended-chn-icon cursor hidden" name="videocam-outline" title="Recommended channels"></ion-icon>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="1500">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Mindgames</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">1.5k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="2500">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Poohbear</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">2.5k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="13300">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>1stepahead</b></p>
+            <p class="game-category">Teamfight Tactics</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">13.3k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="450">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Avocado</b></p>
+            <p class="game-category">Vainglory</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">450</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor online" data-viewers ="1050">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>sunnmoon</b></p>
+            <p class="game-category">League of Legends</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">1.1k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden online" data-viewers ="200">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>tra1n</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">200</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden online" data-viewers ="4000">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>Sodapop</b></p>
+            <p class="game-category">TeamFight Tactics</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">4.0k</div>
+          </div>
+        </div>
+        <div class="aside-item flex-container align-center cursor hidden online" data-viewers ="1900">
+          <div class="avatar-container flex-container justify-center align-center">
+            <ion-icon class="person-icon" name="person"></ion-icon>
+          </div>
+          <div class="content grow-1 collapsable">
+            <p class="streamer-name"><b>cocopuff</b></p>
+            <p class="game-category">Among Us</p>
+          </div>
+          <div class="flex-container align-center viewer-count-container collapsable">
+            <div class="red-dot"></div>
+            <div class="viewers">1.9k</div>
+          </div>
+        </div>
+      <div class="show-more-recommended-btn collapsable cursor">Show more</div>
+      </div>
+    </aside>
+
+    <main class="grow-1" data-simplebar>
+      <div class="advertised-chn-wrapper">
+        <div class="advertised-chn-container flex-container align-center justify-center rel">
+          <ion-icon name="chevron-back-outline" class="advertised-chn-btn-left advertised-chn-btn cursor abs bd-5"></ion-icon>
+
+          <div class=" advertised-channel flex-container cursor abs channel-0">
+            <div class="advertised-chn-img-section flex-container rel">
+              <img src="./img/League1.jpg" alt="League">
+              <div class="live-label abs hidden">Live</div>
+            </div>
+
+            <div class="advertised-chn-content-section grow-1 hidden">
+              <div class="flex-container advertised-chn-content-section-container flex-col">
+                <div class="flex-container flex-col">
+                  <div class="flex-container">
+                    <div class="avatar-container flex-container justify-center align-center">
+                      <ion-icon class="person-icon" name="person"></ion-icon>
+                    </div>
+                    <div class="flex-container flex-col">
+                      <p class="decorate cursor"><b>SuperGirlGPP</b></p>
+                      <p class="decorate cursor">League of Legends</p>
+                      <p class="viewer-count">5.3K viewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-container">
+                      <span class="cursor">English</span>
+                      <span class="cursor">Competitive</span>
+                    </div>
+                  </div>
+                </div>
+                <p>The top qualifiers in Hearthstone, League of Legends, and CS:GO compete for a piece of the $30k price pool in the Super Girl Gamer Pro Championships!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="advertised-channel flex-container cursor abs channel-1">
+            <div class="advertised-chn-img-section flex-container rel">
+              <img src="./img/chess.jpg" alt="Chess">
+              <div class="live-label abs hidden">Live</div>
+            </div>
+
+            <div class="advertised-chn-content-section grow-1 hidden">
+              <div class="flex-container advertised-chn-content-section-container flex-col">
+                <div class="flex-container flex-col">
+                  <div class="flex-container">
+                    <div class="avatar-container flex-container justify-center align-center">
+                      <ion-icon class="person-icon" name="person"></ion-icon>
+                    </div>
+                    <div class="flex-container flex-col">
+                      <p class="decorate cursor"><b>imrosenn</b></p>
+                      <p class="decorate cursor">Chess</p>
+                      <p class="viewer-count">1.4K viewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-container">
+                      <span class="cursor">English</span>
+                      <span class="cursor">AMA</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Join us as we feature Twitch's Chess Partners as they face off in open Chess matches against for other Affiliates and Partners to challenge. Handicap matches are available to even the playing field!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="advertised-channel flex-container cursor abs channel-2">
+            <div class="advertised-chn-img-section flex-container rel">
+              <img src="./img/abracadabra.jpg" alt="Music festival">
+              <div class="live-label abs">Live</div>
+            </div>
+
+            <div class="advertised-chn-content-section grow-1">
+              <div class="flex-container advertised-chn-content-section-container flex-col">
+                <div class="flex-container flex-col">
+                  <div class="flex-container">
+                    <div class="avatar-container flex-container justify-center align-center">
+                      <ion-icon class="person-icon" name="person"></ion-icon>
+                    </div>
+                    <div class="flex-container flex-col">
+                      <p class="decorate cursor"><b>Abracadabra</b></p>
+                      <p class="decorate cursor">Music</p>
+                      <p class="viewer-count">18.7K viewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-container">
+                      <span class="cursor">English</span>
+                      <span class="cursor">Electronic Music</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Abracadabra presents Magic Saturdaze featuring BLOND:ISH live from La La Land, Laurence Matte, Vanco & Differ. Your weekly dose of Positive Energy & Good Vibes only!</p>
+              </div>
+            </div>
+          </div>
+          <div class="advertised-channel flex-container abs cursor channel-3">
+            <div class="advertised-chn-img-section flex-container rel">
+              <img src="./img/insomniac.jpg" alt="Chess">
+              <div class="live-label abs hidden">Live</div>
+            </div>
+
+            <div class="advertised-chn-content-section grow-1 hidden">
+              <div class="flex-container advertised-chn-content-section-container flex-col">
+                <div class="flex-container flex-col">
+                  <div class="flex-container">
+                    <div class="avatar-container flex-container justify-center align-center">
+                      <ion-icon class="person-icon" name="person"></ion-icon>
+                    </div>
+                    <div class="flex-container flex-col">
+                      <p class="decorate cursor"><b>insomniacc</b></p>
+                      <p class="decorate cursor">Music</p>
+                      <p class="viewer-count">13.5K viewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-container">
+                      <span class="cursor">English</span>
+                      <span class="cursor">Music Events</span>
+                    </div>
+                  </div>
+                </div>
+                <p>Confessions: Tchami & Friends</p>
+              </div>
+            </div>
+          </div>
+          <div class="advertised-channel flex-container cursor abs channel-4">
+            <div class="advertised-chn-img-section flex-container rel">
+              <img src="./img/streaming.jpg" alt="Streaming">
+              <div class="live-label abs hidden">Live</div>
+            </div>
+
+            <div class="advertised-chn-content-section grow-1 hidden">
+              <div class="flex-container advertised-chn-content-section-container flex-col">
+                <div class="flex-container flex-col">
+                  <div class="flex-container">
+                    <div class="avatar-container flex-container justify-center align-center">
+                      <ion-icon class="person-icon" name="person"></ion-icon>
+                    </div>
+                    <div class="flex-container flex-col">
+                      <p class="decorate cursor"><b>Ccommunity1</b></p>
+                      <p class="decorate cursor">Just Chatting</p>
+                      <p class="viewer-count">3.4K viewers</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex-container">
+                      <span class="cursor">English</span>
+                      <span class="cursor">Charity</span>
+                    </div>
+                  </div>
+                </div>
+                <p>A stream-a-thon to raise money in need of laptops and wifi for virtual learning</p>
+              </div>
+            </div>
+          </div>
+          <ion-icon name="chevron-forward-outline" class="advertised-chn-btn-right advertised-chn-btn cursor abs bd-5"></ion-icon>
+        </div>
+      </div>
+
+      <div class="other-channels-wrapper">
+        <div class="other-channels-container">
+
+          <div class="other-channels">
+            <h2>Live channels we think you'll like</h2>
+            <div class="recommendedChn grid-container">
+
+            </div>
+
+            <div class="flex-container align-center show-more-btn-wrapper">
+              <div class="line"></div>
+              <span class="show-more-btn cursor bd-5">show more</span>
+              <div class="line"></div>
+            </div>
+          </div>
+
+          <div class="other-channels">
+            <h2>Categories we think you'll like</h2>
+            <div class="recommendedCatg grid-container-sm">
+
+            </div>
+          </div>
+
+          <div class="other-channels">
+            <h2>Recommended Smaller Communities</h2>
+            <div class="smallerCommunityChn grid-container">
+            </div>
+
+            <div class="flex-container align-center show-more-btn-wrapper">
+              <div class="line"></div>
+              <span class="show-more-btn cursor bd-5">show more</span>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="other-channels">
+            <h2>All aboard the Hype Train!</h2>
+            <div class="hypeChn grid-container">
+
+            </div>
+            <div class="flex-container align-center show-more-btn-wrapper">
+              <div class="line"></div>
+              <span class="show-more-btn cursor bd-5">show more</span>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="other-channels">
+            <h2>Recommended <span class="highlight cursor">Among Us</span> channels</h2>
+            <div class="amongUsChn grid-container ">
+
+            </div>
+            <div class="flex-container align-center show-more-btn-wrapper">
+              <div class="line"></div>
+              <span class="show-more-btn cursor bd-5">show more</span>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="stream-info-wrapper big">
+    <div class="stream-info stream-info-xQc abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">xQc</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">unchallenged gamer</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">67.3k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-chuck_vg abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">chuck_vg</span>
+        <span class="highlight">Vainglory</span>
+      </div>
+      <p class="stream-title">Celeste mid gameplay</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">733</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-pzzacat abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">pzzacat</span>
+        <span class="highlight">Vainglory</span>
+      </div>
+      <p class="stream-title">Duo with chuck</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">33</div>
+      </div>
+    </div>
+
+    <div class="stream-info stream-info-HideInBush abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">HideInBush</span>
+        <span class="highlight">League of Legends</span>
+      </div>
+      <p class="stream-title">Rank1 asian server</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">210</div>
+      </div>
+    </div>
+
+    <div class="stream-info stream-info-sneaky abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">sneaky</span>
+        <span class="highlight">League of Legends</span>
+      </div>
+      <p class="stream-title">Na mid challenger</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">40.3k</div>
+      </div>
+    </div>
+
+    <div class="stream-info stream-info-Imaqt abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Imaqt</span>
+        <span class="highlight">Genshin Impact</span>
+      </div>
+      <p class="stream-title">Farming chests</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">1.9k</div>
+      </div>
+    </div>
+
+    <div class="stream-info stream-info-MusicProdi abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">MusicProdi</span>
+        <span class="highlight">Music</span>
+      </div>
+      <p class="stream-title">New playlist mix</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">350</div>
+      </div>
+    </div>
+
+    <div class="stream-info stream-info-Peanut abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Peanut</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">Best imposter NA</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">1.3k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-dean abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">dean</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">chill games</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">7.3k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-Mindgames abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Mindgames</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">Top 5 Imposter !youtube</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">1.5k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-Poohbear abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Poohbear</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">3rd imposter pov</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">2.5k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-1stepahead abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">1stepahead</span>
+        <span class="highlight">Teamfight Tactics</span>
+      </div>
+      <p class="stream-title">Warlord main !discord</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">13.3k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-Avocado abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Avocado</span>
+        <span class="highlight">Vainglory</span>
+      </div>
+      <p class="stream-title">Vg bronze</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">450</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-sunnmoon abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">sunnmoon</span>
+        <span class="highlight">League of Legends</span>
+      </div>
+      <p class="stream-title">Road to Challenger</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">1.1k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-tra1n abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">tra1n</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">Variety Stream</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">200</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-Sodapop abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">Sodapop</span>
+        <span class="highlight">TeamFight Tactics</span>
+      </div>
+      <p class="stream-title">New strategy !youtube</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">4.0k</div>
+      </div>
+    </div>
+    <div class="stream-info stream-info-cocopuff abs hidden">
+      <div class="flex-container stream-info-hide">
+        <span class="highlight streamer-name">cocopuff</span>
+        <span class="highlight">Among Us</span>
+      </div>
+      <p class="stream-title">Rank 10 imposter NA</p>
+      <div class="flex-container align-center stream-info-hide">
+        <div class="live-status flex-container align-center viewer-count-container rel">
+          <div class="red-dot"></div>
+          <p>Live</p>
+        </div>
+        <div class="viewers">1.9k</div>
+      </div>
+    </div>
 </div>
+</body>
 <script src="./dist/main.js" charset="utf-8"></script>
 
 </html>

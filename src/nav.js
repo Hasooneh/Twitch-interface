@@ -8,7 +8,7 @@ let dropdownBits = {
   bitsAmount:0,
   bitsHtml: document.querySelector(".bit-count"),
   bitsBody: document.querySelector(".dropdown-bits-body"),
-  updateBitsUI: function (e) {
+  updateBitsUI: function(e) {
     dropdownBits.bitsAmount += JSON.parse(e.target.dataset.bits);
     dropdownBits.bitsHtml.innerHTML = dropdownBits.bitsAmount;
   }
@@ -31,9 +31,14 @@ let dropdownWhispers = {
   usernames: Array.from(document.querySelectorAll(".whisper-item-username")),
   addBorder: () => dropdownWhispers.searchBoxWrapper.classList.add("focus"),
   removeBorder: () => dropdownWhispers.searchBoxWrapper.classList.remove("focus"),
-  deleteItem: function(e) {
-
+  clicked: function(e) {
     if (e.target.classList.contains("delete-icon")) {
+      dropdownWhispers.deleteItem(e);
+    } else {
+
+    }
+  },
+  deleteItem: function(e) {
       let item = e.path.find(el => {
         if (el.classList == undefined) {
         } else if (el.classList.contains("whisper-item")) {
@@ -45,24 +50,16 @@ let dropdownWhispers = {
 
       dropdownWhispers.updateWhispersArr(elToDeleteIndex);
       item.remove();
-
-      let whisperContainerType = e.path.find(el => {
-        if (el.classList == undefined) {
-        } else if (el.classList.contains("whisper-items-container")) {
-          return el;
-        }});
-      if (whisperContainerType.classList.contains("whisper-search-result")) {
-        let whispersShownOuterHtml = dropdownWhispers.whispersShown.map(el => el.outerHTML);
-
-        dropdownWhispers.whispersShownContainer.innerHTML = whispersShownOuterHtml.join("");
-      }
-    }
-  },
-  updateWhispersArr: function (index) {
+      dropdownWhispers.whispersShownContainer.innerHTML = dropdownWhispers.whispersShown.map(el => el.outerHTML).join("");
+    },
+  updateWhispersArr: function(index) {
     dropdownWhispers.whispersShown.splice(index,1);
     dropdownWhispers.usernames.splice(index,1);
   },
-  returnSearchResults: () => {
+  displayWhisper: function() {
+
+  },
+  returnSearchResults: function() {
     let searchInput = dropdownWhispers.searchBox.value;
     let reg = new RegExp(searchInput,"gi");
 
@@ -98,6 +95,8 @@ let dropdownUser = {
           dropdownUser.documentElementStyle.setProperty("--searchiconbg","#242428");
           dropdownUser.documentElementStyle.setProperty("--bitshover","#727272");
           dropdownUser.documentElementStyle.setProperty("--personicon","#000");
+          dropdownUser.documentElementStyle.setProperty("--main","#0E0E10");
+          dropdownUser.documentElementStyle.setProperty("--sidebarbg","#1F1F23");
           this.classList.add("dark-theme")
       } else {
         document.documentElement.style.setProperty("--dropdown","#fff");
@@ -107,6 +106,8 @@ let dropdownUser = {
           dropdownUser.documentElementStyle.setProperty("--searchiconbg","#f4f4f4");
           dropdownUser.documentElementStyle.setProperty("--bitshover","#d3d3d3");
           dropdownUser.documentElementStyle.setProperty("--personicon","#fff");
+          dropdownUser.documentElementStyle.setProperty("--main","#F7F7F8");
+          dropdownUser.documentElementStyle.setProperty("--sidebarbg","#EFEFF1");
           this.classList.remove("dark-theme");
       }
     } else if (this.classList.contains("online-presence")) {
@@ -119,7 +120,7 @@ let dropdownFunctions = {
   toggleDropdown: function(dropdownEl) {
     dropdownEl.classList.toggle("hidden");
   },
-  closeLastOpenDropdown: function(curDropdownSelected,lastDropdownSelected) {
+  closeLastOpenDropdown: function (curDropdownSelected,lastDropdownSelected) {
     if (curDropdownSelected != lastDropdownSelected && lastDropdownSelected != "") {
       dropdownFunctions.closeDropdown(lastDropdownSelected);
     }
@@ -137,7 +138,7 @@ let dropdownFunctions = {
     }
 
     if (dropdownEl.classList.contains("dropdown-whispers")) {
-      dropdownEl.querySelector(".body").removeEventListener("click", dropdownWhispers.deleteItem);
+      dropdownEl.querySelector(".body").removeEventListener("click", dropdownWhispers.clicked);
 
       dropdownWhispers.searchBox.removeEventListener("focus", dropdownWhispers.addBorder);
 
@@ -154,13 +155,12 @@ let dropdownFunctions = {
   },
   checkClickCoordinates: function(e) {
     let [dropdownR,dropdownL,dropDownT,dropDownB] = [dropdownData.dropdownCoordinates.left,dropdownData.dropdownCoordinates.right,dropdownData.dropdownCoordinates.top,dropdownData.dropdownCoordinates.bottom]
-
     if (e.target.classList.contains("dropdown-toggler") || ((e.pageX >= dropdownR && e.pageX <= dropdownL && e.pageY >= dropDownT && e.pageY <= dropDownB) && e.target.classList.contains("close-icon") == false)) {
 
     } else {
       dropdownFunctions.closeDropdown(dropdownData.dropdown);
+      document.removeEventListener("click",dropdownFunctions.checkClickCoordinates);
     }
-    document.removeEventListener("click",dropdownFunctions.checkClickCoordinates);
   },
   TogglerClicked: function(e) {
     dropdownData.dropdown = this.querySelector(".dropdown");
@@ -188,7 +188,7 @@ let dropdownFunctions = {
         dropdownNotif.notificationDeleteIcon.forEach(el => el.addEventListener("mouseleave",dropdownNotif.changeNotificationBg));
     }
     if (dropdownData.dropdown.classList.contains("dropdown-whispers")) {
-        dropdownData.dropdown.querySelector(".body").addEventListener("click", dropdownWhispers.deleteItem);
+        dropdownData.dropdown.querySelector(".body").addEventListener("click", dropdownWhispers.clicked);
 
         dropdownWhispers.searchBox.addEventListener("focus", dropdownWhispers.addBorder);
 
