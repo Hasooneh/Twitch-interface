@@ -1,9 +1,10 @@
 import {otherChannels} from "./mainsection.js";
+import {dropdownWhispers} from "./nav.js"
 let sidebarContent = {
   sidebar: document.querySelector(".sidebar"),
   streamInfo: document.querySelector(".stream-info-wrapper"),
   onlineChannels: document.querySelectorAll(".aside-item.online"),
-  collapsableElements: document.querySelectorAll(".collapsable"),
+  collapsableElements: document.querySelectorAll(".sidebar .collapsable"),
   heartIcon: document.querySelector(".heart-icon-wrapper"),
   recommendedIcon: document.querySelector(".recommended-chn-icon"),
   collapseBtn: document.querySelector(".collapse-icon"),
@@ -31,6 +32,7 @@ let sidebarContent = {
         otherChannels.calcHowManyChnFit(container);
       })
       otherChannels.calcHowManyChnFit(otherChannels.smallGridContainer);
+      dropdownWhispers.hideAndShowWhispersOpen();
   },
   showInfo: function(e) {
     let itemPosition = this.getBoundingClientRect();

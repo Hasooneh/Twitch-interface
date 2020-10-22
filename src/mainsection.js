@@ -1,4 +1,5 @@
 import {channels} from "./channels.js"
+import {dropdownWhispers} from "./nav.js"
 let advertisedChannelsSection = {
   channels: document.querySelectorAll(".advertised-channel"),
   buttons: document.querySelectorAll(".advertised-chn-btn"),
@@ -123,5 +124,6 @@ window.addEventListener("resize", function() {
       otherChannels.calcHowManyChnFit(container);
   })
   otherChannels.calcHowManyChnFit(otherChannels.smallGridContainer);
+  dropdownWhispers.hideAndShowWhispersOpen();
 });
 otherChannels.showMoreButtons.forEach(btn => btn.addEventListener("click",otherChannels.btnClicked));
